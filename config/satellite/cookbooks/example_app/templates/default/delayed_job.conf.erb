@@ -1,0 +1,4 @@
+check process delayed_job
+  with pidfile /app/example_app/shared/pids/delayed_job.pid
+  start program = "/bin/su - example_app -c 'cd /app/example_app/current && RAILS_ENV=<%= @node['rails_env'] %> bundle exec rake satellite:worker:start'"
+  stop  program = "/bin/su - example_app -c 'cd /app/example_app/current && RAILS_ENV=<%= @node['rails_env'] %> bundle exec rake satellite:worker:stop'"

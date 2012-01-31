@@ -1,0 +1,17 @@
+production:
+  app: example_app-production
+  config:
+    S3_ACCESS_KEY_ID:     "XXXXXXXXXXXXXXXXXXXX"
+    S3_SECRET_ACCESS_KEY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    NEW_RELIC_APPNAME:    "example_app-production"
+    NEW_RELIC_ID:         "XXXXX"
+    NEW_RELIC_LICENSE_KEY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+staging:
+  app: example_app-staging
+  config: &default
+    S3_ACCESS_KEY_ID:     "XXXXXXXXXXXXXXXXXXXX"
+    S3_SECRET_ACCESS_KEY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    NEW_RELIC_APPNAME:    "example_app-staging"
+    NEW_RELIC_ID:         "XXXXX"
+    NEW_RELIC_LICENSE_KEY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
