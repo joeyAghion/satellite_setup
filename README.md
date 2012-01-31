@@ -9,5 +9,6 @@ These files _will_ require modification to be relevant to your environment. In p
 * `config/satellite/cookbooks/example_app/recipes/deploy.rb`: git repo
 * `config/satellite/cookbooks/example_app/files/default/authorized_keys`: any keys for SSH authorization
 * `config/satellite/cookbooks/example_app/files/id_dsa`: a new private key, authorized for the git repo
-
 * references to `example_app` throughout should be updated with your app name
+
+(c) 2012 Art.sy, Inc.
